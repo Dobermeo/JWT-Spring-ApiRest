@@ -1,11 +1,11 @@
-package com.example.security
+package com.example.proIntel
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SecurityApplication
+class ProIntelApplication
 
 fun main(args: Array<String>) {
-	runApplication<SecurityApplication>(*args)
+	runApplication<ProIntelApplication>(*args)
 }

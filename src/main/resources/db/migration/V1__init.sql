@@ -1,12 +1,10 @@
-CREATE TABLE IF NOT EXISTS  workout (
-  id serial,
-  description VARCHAR(45) NOT NULL,
-  details VARCHAR(45) NULL,
-  PRIMARY KEY (id)
-  );
-
-CREATE TABLE IF NOT EXISTS  diet (
-  id serial,
-  description VARCHAR(45) NOT NULL,
-  PRIMARY KEY (id)
+CREATE TABLE IF NOT EXISTS person(
+  id SERIAL,
+  apellidos VARCHAR(255) NOT NULL,
+  cedula VARCHAR(13) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  nombres VARCHAR(255) NOT NULL,
+  telefono VARCHAR(13) NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE(cedula)
   );
